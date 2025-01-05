@@ -1,0 +1,35 @@
+
+ul.custom-bullets {
+    list-style-type: square;
+}
+
+ul.custom-icons {
+    list-style: none;
+}
+
+ul.custom-icons li {
+    padding-left: 20px;
+    background: url('https://via.placeholder.com/15') no-repeat left center;
+}
+
+ol.custom-alphabet {
+    list-style-type: lower-alpha;
+}
+
+ol.custom-roman {
+    list-style-type: upper-roman;
+}
+
+ol.custom-start {
+    counter-reset: custom-counter 50;
+    list-style: none;
+}
+
+ol.custom-start li {
+    counter-increment: custom-counter;
+}
+
+ol.custom-start li::before {
+    content: counter(custom-counter) ". ";
+    font-weight: bold;
+}
