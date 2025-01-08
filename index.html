@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todoist Helped</title>
     <link rel="stylesheet" href="/assets/styles/styles.css">
-    <script src="/assets/scripts/mid_things_2.js"></script>
+    <script src="/assets/scripts/form_validation.js"></script>
 </head>
 <body>
     <h1>This is my programming website</h1>
@@ -58,5 +58,51 @@
         <li>Elemento siguiente 51</li>
         <li>Elemento siguiente 52</li>
     </ol>
+
+    <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Abrir Google con seguridad</a>
+    <br>
+    <!-- Imagen con URL absoluta -->
+    <img src="https://via.placeholder.com/300" alt="Un cuadro gris de 300x300 píxeles" width="300" height="300">
+    <br>
+    <!-- Imagen con URL relativa -->
+    <img src="images/mi-foto.jpg" alt="Foto de perfil" width="150">
+    <br>
+    <!-- Imagen redimensionada -->
+    <img src="https://via.placeholder.com/150" alt="Imagen redimensionada" width="75" height="75">
+    <br>
+    <!-- Imagen sin cargar (simulando un error) -->
+    <img src="no-existe.jpg" alt="Esta imagen no está disponible">
+    <br>
+    <img src="https://via.placeholder.com/150" alt="Carga diferida" loading="lazy">
+    <br>
+
+    <form action="/registro" method="POST" id="registroForm">
+        <!-- Campo de texto -->
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+        <span id="errorNombre" class="error"></span>
+        <br><br>
+
+        <!-- Campo de correo -->
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+        <span id="errorCorreo" class="error"></span>
+        <br><br>
+
+        <!-- Campo de contraseña -->
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required>
+        <span id="errorContrasena" class="error"></span>
+        <br><br>
+
+        <!-- Área de texto -->
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="¿Tienes algo que agregar?"></textarea>
+        <br><br>
+
+        <!-- Botones -->
+        <button type="submit">Registrar</button>
+        <button type="reset">Limpiar</button>
+    </form>
 </body>
 </html>
