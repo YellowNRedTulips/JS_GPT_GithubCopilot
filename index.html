@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todoist Helped</title>
     <link rel="stylesheet" href="/assets/styles/styles.css">
-    <script src="/assets/scripts/form_validation.js"></script>
+    <script src="/assets/scripts/ending_basics.js"></script>
 </head>
 <body>
     <h1>This is my programming website</h1>
@@ -104,5 +104,70 @@
         <button type="submit">Registrar</button>
         <button type="reset">Limpiar</button>
     </form>
+    <br><br>
+    <form action="/registro" method="POST">
+        <!-- Grupo: Información personal -->
+        <fieldset>
+            <legend>Información personal</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+            <br><br>
+    
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" placeholder="Escribe tu edad">
+        </fieldset>
+        <br>
+    
+        <!-- Grupo: Preferencias -->
+        <fieldset>
+            <legend>Preferencias</legend>
+            <label for="pais">Selecciona tu país:</label>
+            <select id="pais" name="pais">
+                <option value="es">España</option>
+                <option value="mx" selected>México</option>
+                <option value="ar">Argentina</option>
+            </select>
+            <br><br>
+    
+            <label for="idioma">Selecciona tu idioma:</label>
+            <select id="idioma" name="idioma">
+                <option value="es" selected>Español</option>
+                <option value="en">Inglés</option>
+                <option value="fr" disabled>Francés (No disponible)</option>
+            </select>
+        </fieldset>
+        <br>
+    
+        <!-- Botón de envío -->
+        <button type="submit">Enviar</button>
+    </form>
+    <br>
+    <table border="1" style="border-collapse: collapse; width: 40%; margin: 0 auto; font-family: Arial, sans-serif;">
+        <!-- Fila de encabezados -->
+        <tr style="background-color: #f2f2f2; text-align: left;">
+            <th style="padding: 10px; border: 1px solid #ddd;">Nombre</th>
+            <th style="padding: 10px; border: 1px solid #ddd;">Edad</th>
+            <th style="padding: 10px; border: 1px solid #ddd;">País</th>
+        </tr>
+        <!-- Fila de datos 1 -->
+        <tr style="background-color: #ffffff;">
+            <td style="padding: 10px; border: 1px solid #ddd;">Aurelio</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">27</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">México</td>
+        </tr>
+        <!-- Fila de datos 2 -->
+        <tr style="background-color: #f9f9f9;">
+            <td style="padding: 10px; border: 1px solid #ddd;">María</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">30</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">España</td>
+        </tr>
+        <!-- Fila de datos 3 -->
+        <tr style="background-color: #ffffff;">
+            <td style="padding: 10px; border: 1px solid #ddd;">Carlos</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">25</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Argentina</td>
+        </tr>
+    </table>
+    <br>        
 </body>
 </html>
