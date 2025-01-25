@@ -116,4 +116,4 @@ gestor.completarTarea(1); // Marca la tarea con ID 1 como completada
 gestor.listarTareas(); // Muestra todas las tareas después de marcar como completada
 
 gestor.eliminarTarea(2); // Elimina la tarea con ID 2
-gestor.listarTareas(); // Muestra todas las tareas después de eliminar una
+gestor.listarTareas(); // Muestra todas las tareas después de eliminar una tarea
